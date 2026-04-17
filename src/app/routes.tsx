@@ -18,4 +18,4 @@ export const router = createBrowserRouter([
       { path: "contact", Component: ContactPage },
     ],
   },
-]);
+], { basename: "/membership-app" });
