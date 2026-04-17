@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import { HomePage } from "./pages/HomePage";
 import { FeaturesPage } from "./pages/FeaturesPage";
 import { HowItWorksPage } from "./pages/HowItWorksPage";
@@ -6,7 +6,7 @@ import { PricingPage } from "./pages/PricingPage";
 import { ContactPage } from "./pages/ContactPage";
 import { RootLayout } from "./layouts/RootLayout";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     Component: RootLayout,
@@ -18,4 +18,4 @@ export const router = createBrowserRouter([
       { path: "contact", Component: ContactPage },
     ],
   },
-], { basename: "/membership-app" });
+]);
