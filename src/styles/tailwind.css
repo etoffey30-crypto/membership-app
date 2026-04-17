@@ -1,0 +1,152 @@
+@import 'tailwindcss' source(none);
+@source '../**/*.{js,ts,jsx,tsx}';
+
+@import 'tw-animate-css';
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-green: var(--brand-green);
+  --hero-bg: oklch(0.985 0.01 230);
+  --hero-gradient: radial-gradient(ellipse at 70% 50%, oklch(0.96 0.03 230) 0%, var(--hero-bg) 70%);
+  --brand-coral: oklch(0.72 0.19 25);
+  --brand-orange: oklch(0.78 0.17 55);
+  --brand-sky: oklch(0.78 0.13 230);
+  --brand-blue: oklch(0.58 0.20 255);
+}
+
+/* Custom animations */
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(20px, -50px) scale(1.1); }
+  50% { transform: translate(-20px, 20px) scale(0.9); }
+  75% { transform: translate(50px, 50px) scale(1.05); }
+}
+
+@keyframes hue-shift {
+  0% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(120deg); }
+  100% { filter: hue-rotate(0deg); }
+}
+
+@keyframes breathe {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes text-gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 15px -3px rgba(139, 92, 246, 0.4), 0 4px 6px -4px rgba(139, 92, 246, 0.2); }
+  50% { box-shadow: 0 0 35px -3px rgba(14, 165, 233, 0.6), 0 4px 12px -4px rgba(14, 165, 233, 0.3); }
+}
+
+@keyframes shadow-breathe {
+  0%, 100% { opacity: 0.1; transform: scale(1); filter: blur(20px); }
+  50% { opacity: 0.3; transform: scale(1.05); filter: blur(30px); }
+}
+
+/* Utility Classes */
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-hue-shift {
+  animation: hue-shift 15s linear infinite;
+}
+
+.luminous-bg {
+  background-size: 200% 200%;
+  animation: breathe 8s ease-in-out infinite;
+}
+
+.text-gradient-flow {
+  background-size: 200% auto;
+  animation: text-gradient 4s linear infinite;
+}
+
+.glowing-shadow {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.shadow-breathe-layer {
+  animation: shadow-breathe 6s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes float-container {
+  0%, 100% { transform: translateY(-8px); }
+  50% { transform: translateY(8px); }
+}
+
+.animate-float-container {
+  animation: float-container 6s ease-in-out infinite;
+}
+
+@keyframes gradient-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes gradient-breathe {
+  from { opacity: 0.18; }
+  to { opacity: 0.32; }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-gradient-flow {
+  background-size: 300% 300%;
+  animation: gradient-flow 18s ease-in-out infinite;
+}
+
+.animate-gradient-breathe {
+  animation: gradient-breathe 8s ease-in-out infinite alternate;
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 25s linear infinite;
+}
+
+@keyframes float-blob-1 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(50px, -80px, 0) scale(1.1); }
+  66% { transform: translate3d(-40px, 60px, 0) scale(0.95); }
+}
+
+@keyframes float-blob-2 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(-60px, 40px, 0) scale(1.15); }
+  66% { transform: translate3d(80px, -50px, 0) scale(0.9); }
+}
+
+@keyframes float-blob-3 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(40px, 50px, 0) scale(1.05); }
+  66% { transform: translate3d(-50px, -40px, 0) scale(1.1); }
+}
+
+.animate-float-blob-1 { animation: float-blob-1 18s ease-in-out infinite alternate; will-change: transform; }
+.animate-float-blob-2 { animation: float-blob-2 22s ease-in-out infinite alternate; will-change: transform; }
+.animate-float-blob-3 { animation: float-blob-3 25s ease-in-out infinite alternate; will-change: transform; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-blob-1, .animate-float-blob-2, .animate-float-blob-3, .animate-float-container {
+    animation-play-state: paused !important;
+  }
+}
