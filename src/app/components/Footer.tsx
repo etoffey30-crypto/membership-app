@@ -123,8 +123,8 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-gray-400">Email</div>
-                  <a href="mailto:info@solidaireapp.io" className="text-white hover:text-blue-400 transition-colors">
-                    info@solidaireapp.io
+                  <a href="mailto:admin@solidaire.io" className="text-white hover:text-blue-400 transition-colors">
+                    admin@solidaire.io
                   </a>
                 </div>
               </li>
@@ -132,9 +132,10 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-gray-400">Phone</div>
-                  <a href="tel:+233302242573" className="text-white hover:text-blue-400 transition-colors">
+                  <div className="text-white">
+                    +44 7404 380 942<br />
                     +233 302 242 573
-                  </a>
+                  </div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -142,8 +143,8 @@ export function Footer() {
                 <div>
                   <div className="text-gray-400">Address</div>
                   <div className="text-white">
-                    JPCann Associates Ltd<br />
-                    58 Nsawam Road, Kokomlemle, Accra.
+                    5th Floor, 167–169 Great Portland Street,<br />
+                    London W1W 5PF, UK
                   </div>
                 </div>
               </li>

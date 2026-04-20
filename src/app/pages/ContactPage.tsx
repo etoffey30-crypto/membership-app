@@ -8,22 +8,22 @@ const contactMethods = [
   {
     icon: Phone,
     title: 'Phone Number',
-    contact: '+233 302 242 573',
-    action: 'tel:+233302242573',
+    contact: '+44 7404 380 942 / +233 302 242 573',
+    action: 'tel:+447404380942',
     color: 'from-blue-500 to-sky-400',
   },
   {
     icon: Mail,
     title: 'Email Address',
-    contact: 'info@solidaireapp.io',
-    action: 'mailto:info@solidaireapp.io',
+    contact: 'admin@solidaire.io',
+    action: 'mailto:admin@solidaire.io',
     color: 'from-blue-500 to-sky-400',
   },
   {
     icon: MapPin,
     title: 'Our Office',
-    contact: '58 Nsawam Road, Kokomlemle, Accra.',
-    action: 'https://maps.google.com/?q=58+Nsawam+Road,+Kokomlemle,+Accra',
+    contact: '5th Floor, 167–169 Great Portland Street, London W1W 5PF, UK',
+    action: 'https://maps.google.com/?q=167-169+Great+Portland+Street,+London+W1W+5PF,+UK',
     color: 'from-blue-500 to-sky-400',
   },
 ];
