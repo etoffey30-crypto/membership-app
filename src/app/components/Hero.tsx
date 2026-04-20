@@ -113,7 +113,8 @@ export function Hero() {
       }}
     >
       {/* ══ MAIN CONTENT ══ */}
-      <div className="relative z-10 flex-1 max-w-7xl mx-auto w-full px-6 lg:px-10 flex items-center">        <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
+      <div className="relative z-10 flex-1 max-w-7xl mx-auto w-full px-6 lg:px-10 flex items-center py-12 lg:py-0">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
 
           {/* ━━━━━ LEFT COLUMN ━━━━━ */}
           <motion.div
@@ -175,9 +176,9 @@ export function Hero() {
           </motion.div>
 
           {/* ━━━━━ RIGHT COLUMN ━━━━━ */}
-          <div className="relative flex items-center justify-center w-full mt-12 lg:mt-0" style={{ minHeight: 640 }}>
-            {/* ── Animated Wrapper for the visual ── */}
-            <div className="relative w-full max-w-[760px] animate-float-container group">
+          <div className="relative flex items-center justify-center w-full mt-8 lg:mt-0" style={{ minHeight: 'auto' }}>
+            <div className="relative w-full max-w-[760px] min-h-[320px] lg:min-h-[640px] flex items-center justify-center">
+              <div className="relative w-full animate-float-container group">
               
               {/* ── Main Video Visual ── */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl z-10">
