@@ -399,7 +399,7 @@ export function PricingPage() {
             {/* Background Image with Blur */}
             <div className="absolute inset-0 z-0">
               <img 
-                src="/dashboard.png" 
+                src={import.meta.env.BASE_URL + 'dashboard.png'} 
                 alt="Dashboard Background"
                 className="w-full h-full object-cover filter blur-lg scale-110"
               />

@@ -70,7 +70,7 @@ function DashboardMockup() {
         {/* Floating image container */}
         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
           <motion.img
-            src="/dashboard.png"
+            src={import.meta.env.BASE_URL + 'dashboard.png'}
             alt="Solidaire Dashboard across devices"
             className="w-full h-auto object-contain"
             style={{ transform: "translateZ(20px)" }}
