@@ -37,22 +37,12 @@ export function Navigation() {
         <div className="flex items-center h-[72px] gap-4">
 
           {/* ── Logo ── */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0 group">
+          <Link to="/" className="flex items-center shrink-0 group">
             <img
               src={SolidaireLogo}
               alt="Solidaire Logo"
               className="w-16 h-16 object-contain transition-transform group-hover:scale-110"
             />
-            <span
-              className="text-xl font-black tracking-tight"
-              style={{
-                background: 'linear-gradient(90deg,#f97316 0%,#ec4899 40%,#6366f1 80%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            >
-              Solidaire
-            </span>
           </Link>
 
           {/* ── Desktop centered nav links ── */}
@@ -109,6 +99,18 @@ export function Navigation() {
                 Start Free Trial
               </motion.button>
             </a>
+            <Link to="/" className="ml-2">
+              <span
+                className="text-xl font-black tracking-tight"
+                style={{
+                  background: 'linear-gradient(90deg,#f97316 0%,#ec4899 40%,#6366f1 80%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                }}
+              >
+                Solidaire
+              </span>
+            </Link>
           </div>
 
           {/* ── Mobile hamburger ── */}
