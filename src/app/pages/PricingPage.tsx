@@ -50,8 +50,8 @@ const plans = [
   {
     name: 'Enterprise',
     description: 'For large associations with complex requirements',
-    price: 'Custom',
-    period: 'tailored pricing',
+    price: '299',
+    period: 'per month',
     features: [
       'Unlimited members',
       'Everything in Professional',

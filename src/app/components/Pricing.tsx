@@ -7,7 +7,7 @@ const plans = [
   {
     name: 'Starter',
     description: 'Perfect for small associations getting started',
-    price: 'Custom',
+    price: '49',
     period: 'per month',
     features: [
       'Up to 500 members',
@@ -23,7 +23,7 @@ const plans = [
   {
     name: 'Professional',
     description: 'For growing organizations with advanced needs',
-    price: 'Custom',
+    price: '149',
     period: 'per month',
     features: [
       'Up to 2,500 members',
@@ -41,8 +41,8 @@ const plans = [
   {
     name: 'Enterprise',
     description: 'For large associations with complex requirements',
-    price: 'Custom',
-    period: 'tailored pricing',
+    price: '299',
+    period: 'per month',
     features: [
       'Unlimited members',
       'Everything in Professional',
