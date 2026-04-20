@@ -5,6 +5,7 @@ import { Check, Sparkles, HelpCircle } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { Link } from 'react-router';
 import { MagicAnimator } from '../components/MagicAnimator';
+import PricingHeroImage from '../../imports/Designer_1.png';
 
 const plans = [
   {
@@ -180,7 +181,7 @@ export function PricingPage() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1758519288197-69c459bd55d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmljaW5nJTIwcGxhbnMlMjBidXNpbmVzcyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzYzNDM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={PricingHeroImage}
                   alt="Pricing Plans"
                   className="w-full h-auto"
                 />
