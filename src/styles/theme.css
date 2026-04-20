@@ -34,7 +34,7 @@
   --destructive-foreground: #ffffff;
   
   /* Luminous White Border & Shadows */
-  --border: rgba(14, 165, 233, 0.08); /* Subtle blue tint */
+  --border: rgba(14, 165, 233, 0.2); /* More visible blue tint */
   --input: #ffffff;
   --input-background: #ffffff;
   --switch-background: #e2e8f0;

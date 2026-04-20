@@ -166,7 +166,7 @@ export function ContactPage() {
           <div ref={ref} className="grid lg:grid-cols-2 gap-12">
             {/* Form */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 1, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8 }}
             >
@@ -220,7 +220,7 @@ export function ContactPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 border-2 border-slate-200 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -237,7 +237,7 @@ export function ContactPage() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 border-2 border-slate-200 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"
                         placeholder="Your Organization"
                       />
                     </div>
@@ -251,7 +251,7 @@ export function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-3 border-2 border-slate-200 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"
                         placeholder="+1 (234) 567-890"
                       />
                     </div>
@@ -268,7 +268,7 @@ export function ContactPage() {
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                      className="w-full px-4 py-3 border-2 border-slate-200 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none text-slate-900"
                       placeholder="Tell us how we can help..."
                     />
                   </div>
