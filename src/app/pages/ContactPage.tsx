@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare, Clock, CheckCircle } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { MagicAnimator } from '../components/MagicAnimator';
+import ContactHeroImage from '../../imports/Designer_2.png';
 
 const contactMethods = [
   {
@@ -115,7 +116,7 @@ export function ContactPage() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1762341114881-669da93fef88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHdvbWFuJTIwcGhvbmV8ZW58MXx8fHwxNzc2MzQzNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={ContactHeroImage}
                   alt="Customer Support"
                   className="w-full h-auto"
                 />
