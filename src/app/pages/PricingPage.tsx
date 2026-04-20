@@ -10,7 +10,7 @@ const plans = [
   {
     name: 'Starter',
     description: 'Perfect for small associations getting started',
-    price: '49',
+    price: '559',
     period: 'per month',
     features: [
       'Up to 500 members',
@@ -29,7 +29,7 @@ const plans = [
   {
     name: 'Professional',
     description: 'For growing organizations with advanced needs',
-    price: '149',
+    price: '1,699',
     period: 'per month',
     features: [
       'Up to 2,500 members',
@@ -50,7 +50,7 @@ const plans = [
   {
     name: 'Enterprise',
     description: 'For large associations with complex requirements',
-    price: '299',
+    price: '2,793',
     period: 'per month',
     features: [
       'Unlimited members',
@@ -242,7 +242,7 @@ export function PricingPage() {
                   {/* Price */}
                   <div className="mb-8">
                     <div className="flex items-baseline gap-2">
-                      {plan.price !== 'Custom' && <span className="text-3xl text-foreground/60">$</span>}
+                      {plan.price !== 'Custom' && <span className="text-3xl text-foreground/60">GH¢</span>}
                       <span className="text-4xl sm:text-5xl font-bold text-primary">{plan.price}</span>
                     </div>
                     <div className="text-sm text-foreground/60 mt-1">{plan.period}</div>

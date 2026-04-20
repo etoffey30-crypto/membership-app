@@ -7,7 +7,7 @@ const plans = [
   {
     name: 'Starter',
     description: 'Perfect for small associations getting started',
-    price: '49',
+    price: 'GH¢ 559',
     period: 'per month',
     features: [
       'Up to 500 members',
@@ -23,7 +23,7 @@ const plans = [
   {
     name: 'Professional',
     description: 'For growing organizations with advanced needs',
-    price: '149',
+    price: 'GH¢ 1,699',
     period: 'per month',
     features: [
       'Up to 2,500 members',
@@ -41,7 +41,7 @@ const plans = [
   {
     name: 'Enterprise',
     description: 'For large associations with complex requirements',
-    price: '299',
+    price: 'GH¢ 2,793',
     period: 'per month',
     features: [
       'Unlimited members',
