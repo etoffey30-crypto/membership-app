@@ -53,7 +53,7 @@ const plans = [
       'SLA guarantee',
       'Training & onboarding',
     ],
-    cta: 'Contact Sales',
+    cta: 'Start Free Trial',
     popular: false,
   },
 ];

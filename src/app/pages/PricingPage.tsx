@@ -64,7 +64,7 @@ const plans = [
       'Unlimited storage',
       'Custom development',
     ],
-    cta: 'Contact Sales',
+    cta: 'Start Free Trial',
     popular: false,
     color: 'from-orange-500 to-orange-600',
   },
