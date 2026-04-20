@@ -41,7 +41,7 @@ export function Navigation() {
             <img
               src={SolidaireLogo}
               alt="Solidaire Logo"
-              className="w-14 h-14 object-contain transition-transform group-hover:scale-110"
+              className="w-16 h-16 object-contain transition-transform group-hover:scale-110"
             />
             <span
               className="text-xl font-black tracking-tight"
