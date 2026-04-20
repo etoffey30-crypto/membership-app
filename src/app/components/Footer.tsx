@@ -123,8 +123,8 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-gray-400">Email</div>
-                  <a href="mailto:info@jpcannassociates.com" className="text-white hover:text-blue-400 transition-colors">
-                    info@jpcannassociates.com
+                  <a href="mailto:info@solidaireapp.io" className="text-white hover:text-blue-400 transition-colors">
+                    info@solidaireapp.io
                   </a>
                 </div>
               </li>

@@ -6,28 +6,25 @@ import { MagicAnimator } from '../components/MagicAnimator';
 
 const contactMethods = [
   {
-    icon: MapPin,
-    title: 'Visit Us',
-    description: 'JPCann Associates Ltd',
-    contact: '58 Nsawam Road, Kokomlemle, Accra.',
-    action: '#',
-    color: 'from-blue-500 to-blue-600',
-  },
-  {
     icon: Phone,
-    title: 'Call Us',
-    description: 'Mon-Fri from 8am to 5pm GMT',
+    title: 'Phone Number',
     contact: '+233 302 242 573',
     action: 'tel:+233302242573',
-    color: 'from-sky-500 to-sky-600',
+    color: 'from-blue-500 to-sky-400',
   },
   {
     icon: Mail,
-    title: 'Email Us',
-    description: 'Our team responds within 24 hours',
-    contact: 'info@jpcannassociates.com',
-    action: 'mailto:info@jpcannassociates.com',
-    color: 'from-violet-500 to-violet-600',
+    title: 'Email Address',
+    contact: 'info@solidaireapp.io',
+    action: 'mailto:info@solidaireapp.io',
+    color: 'from-blue-500 to-sky-400',
+  },
+  {
+    icon: MapPin,
+    title: 'Our Office',
+    contact: '58 Nsawam Road, Kokomlemle, Accra.',
+    action: 'https://maps.google.com/?q=58+Nsawam+Road,+Kokomlemle,+Accra',
+    color: 'from-blue-500 to-sky-400',
   },
 ];
 
@@ -146,20 +143,21 @@ export function ContactPage() {
               <motion.a
                 key={index}
                 href={method.action}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group bg-white p-8 rounded-2xl border border-border hover:border-transparent hover:shadow-2xl transition-all duration-300"
+                className="group flex items-center gap-6 p-4 rounded-2xl transition-all duration-300 hover:bg-white/50"
               >
-                <div className={`w-14 h-14 bg-gradient-to-br ${method.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                  <method.icon className="w-7 h-7 text-white" />
+                <div className={`w-14 h-14 bg-gradient-to-br ${method.color} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform`}>
+                  <method.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-2">{method.title}</h3>
-                <p className="text-foreground/70 mb-4">{method.description}</p>
-                <p className={`font-semibold bg-gradient-to-r ${method.color} bg-clip-text text-transparent`}>
-                  {method.contact}
-                </p>
+                <div>
+                  <h3 className="text-xl font-medium text-sky-500 mb-0.5">{method.title}</h3>
+                  <p className="text-xl font-medium text-slate-900 group-hover:text-blue-600 transition-colors">
+                    {method.contact}
+                  </p>
+                </div>
               </motion.a>
             ))}
           </div>
