@@ -30,10 +30,10 @@ const contactMethods = [
 
 const offices = [
   {
-    city: 'Ghana (HQ)',
-    address: 'JPCann Associates Ltd, 58 Nsawam Road',
-    state: 'Kokomlemle, Accra',
-    image: 'https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3NjIzMTk2NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    city: 'London (HQ)',
+    address: '5th Floor, 167–169 Great Portland Street',
+    state: 'London W1W 5PF, UK',
+    image: 'https://images.unsplash.com/photo-1549443545-ad396e1302ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb25kb24lMjBvZmZpY2V8ZW58MXx8fHwxNzc2MzQzNjYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
   }
 ];
 
