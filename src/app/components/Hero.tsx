@@ -265,6 +265,7 @@ export function Hero() {
           </div>
         </div>
       </div>
+      </div>
 
       {/* Scroll indicator */}
       <motion.div
