@@ -6,14 +6,11 @@ export function TawkMessenger() {
     (window as any).Tawk_API = (window as any).Tawk_API || {};
     (window as any).Tawk_LoadStart = new Date();
     
-    // Set embedded ID if provided in the script
-    (window as any).Tawk_API.embedded = 'tawk_69d637f5c681461c33e51b73';
-
     const s1 = document.createElement("script");
     const s0 = document.getElementsByTagName("script")[0];
     
     s1.async = true;
-    s1.src = 'https://embed.tawk.to/69d637f5c681461c33e51b73/1jmobgqro';
+    s1.src = 'https://embed.tawk.to/69d637f5c681461c33e51b73/1jlmdb3sd';
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     
@@ -29,17 +26,8 @@ export function TawkMessenger() {
       if (script && script.parentNode) {
         script.parentNode.removeChild(script);
       }
-      if ((window as any).Tawk_API) {
-        delete (window as any).Tawk_API;
-      }
     };
   }, []);
 
-  return (
-    <div 
-      id="tawk_69d637f5c681461c33e51b73"
-      className="fixed bottom-4 right-4 z-[9999]"
-      style={{ minHeight: '1px' }}
-    />
-  );
+  return null; // Tawk.to floating widget handles its own rendering
 }
