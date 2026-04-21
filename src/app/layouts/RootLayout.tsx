@@ -2,6 +2,7 @@ import { Outlet, ScrollRestoration } from 'react-router';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { GlobalAurora } from '../components/GlobalAurora';
+import { TawkMessenger } from '../components/TawkMessenger';
 import { useEffect, useRef } from 'react';
 
 export function RootLayout() {
@@ -60,6 +61,7 @@ export function RootLayout() {
           <Outlet />
         </main>
         <Footer />
+        <TawkMessenger />
       </div>
     </div>
   );
